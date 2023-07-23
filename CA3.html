@@ -40,16 +40,26 @@
         color: var(--base-font-color);
       }
 
-    /* Links in the article should be c-magenta */
+      /* Links in the article should be c-magenta */
       article a {
        color: var(--c-magenta);
       }
    
-      /* When the mouse hovers over a link, it should be highlighted orange */
+      /* When the mouse hovers over a link, it highlights orange */
       article a:hover {
-    background-color: var(--c-orange);
-  }
-    
+      background-color: var(--c-orange);
+      }
+
+      /* Add a border around each subsection */
+      .subsection {
+      border: 3px solid  var(--c-cyan);
+      
+      }
+
+
+</style>
+
+   
 
 </style>
 
@@ -89,11 +99,16 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. <a href="#">Lorem lacinia consectetur</a></p>
 
-        <h3>Subsection</h3>
+        <!-- Add the 'subsection' class to wrap each subsection -->
+        <div class="subsection">
+        <h3> Subsection</h3>
 
         <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
 
         <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+        
+        <!-- Add the 'subsection' class to wrap each subsection -->
+        <div class="subsection">
 
         <h3>Another subsection</h3>
 
