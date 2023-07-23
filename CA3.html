@@ -30,15 +30,26 @@
         background-color: var(--c-background-color);
       }
 
-      /* Set the background color of the header and footer to c-background-highlights */
+    /* Set the background color of the header and footer to c-background-highlights */
       header, footer {
         background-color: var(--c-background-highlights);
       }
 
-/* Set the background color of the header and footer to c-background-highlights */
-header, footer {
-  background-color: var(--c-background-highlights);
-}
+    /* Set the text color in the main, footer, and header to base-font-color */
+    body, header, footer {
+        color: var(--base-font-color);
+      }
+
+    /* Links in the article should be c-magenta */
+      article a {
+       color: var(--c-magenta);
+      }
+   
+      /* When the mouse hovers over a link, it should be highlighted orange */
+      article a:hover {
+    background-color: var(--c-orange);
+  }
+    
 
 </style>
 
@@ -76,7 +87,7 @@ header, footer {
       <article>
         <h2>Article heading</h2>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. <a href="#">Lorem lacinia consectetur</a></p>
 
         <h3>Subsection</h3>
 
@@ -89,7 +100,8 @@ header, footer {
         <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
 
         <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
-      </article>
+        
+    </article>
 
       <!-- the aside content can also be nested within the main content -->
       <aside>
