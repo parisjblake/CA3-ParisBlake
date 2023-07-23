@@ -32,7 +32,13 @@
 
       /* Set the background color of the header and footer to   c-background-highlights */
       header, footer {
-        background-color: var(--c-background-highlights);
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -46vw;
+      margin-right: -46vw;
+      background-color: var(--c-background-highlights);
       }
 
       /* Set the text color in the main, footer, and header to base-font-color */
@@ -61,9 +67,9 @@
       }
       header {
       color: var(--c-yellow);
+      }
 
       /* Nav section improved layout */
-      }
       nav ul {     
       list-style: none;
       display: flex;
@@ -71,9 +77,8 @@
       width: 100%;
       }
       nav li {
-      margin-right: 65px;
+      margin-right: 70px;
       
-
       /* Nav section colour changes */
       }
       aside {
@@ -93,13 +98,13 @@
       max-width: 800px;
       }
       
-      /* Artile top padding */
+      /* Article top padding */
       article h2,
       article h3 {
       padding-top: 50px;
       }
 
-       /* Aside alingment set to right */
+       /* Aside alingment */
       main {
       display: flex;
       justify-content: space-between;
